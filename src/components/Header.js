@@ -8,7 +8,7 @@ import { logout } from "../Slice/authSlice";
 const Header = () => {
   const cartItems = useSelector((state) => state.cart.items); //get cart items from redux
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  const Logo = new URL("../images/fooapplogo.jpg", import.meta.url);
+  const Logo = new URL("../images/foo-app-logo.jpg", import.meta.url);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
   const [isMenuOpen, setIsMenuOpen] = useState(false);

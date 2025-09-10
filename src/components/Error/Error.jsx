@@ -1,8 +1,10 @@
 import React from 'react'
 import "./Error.css"
 import { Link } from 'react-router-dom'
-import errorImage from "../../public/images/404-error.png"
+
 const Error = () => {
+    const errorImage = new URL("../../public/images/404-erro.jpg", import.meta.url);
+
   return (
     <div className='error-container'>
         <div className='error-content'> 
